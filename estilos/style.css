@@ -18,7 +18,8 @@
         left: 50%;
         top: 22%;
         position: absolute;
-         transform: translate(-50%, -50%);  
+         transform: translate(-50%, -50%); 
+         
     }
     section#bloco{
         width: 60vw;
@@ -33,7 +34,73 @@
     div#campo{
         display: block;
         text-align: center;
-        margin-top: 250px;
-    }
+        margin-top: 220px;
+        background-color: white;
+        width: 90%;
+        margin-left: 15px;
+        padding: 3px;
 
+    
+    }
+    div#senha{
+           display: block;
+        text-align: center;
+      margin-top: 10px; 
+       background-color: white;
+        width: 90%;
+        margin-left: 15px;
+        padding: 3px;
+    }
+    label{
+        color: white;
+    }
+    div > input[type=text]{
+        
+        width: 70%;
+        border: none;
+        margin: auto;
+        height: 40px;
+        background-color: white;
+        padding: 5px;
+
+    }
+    div > input[type=password]{
+        width: 70%;
+        border: none;
+        margin: auto;
+        height: 40px;
+        background-color: white;
+        padding-top: 3px;
+
+    }
+    
+    div#login{
+        width: 300px;
+        height: 40px;
+        display: block;
+    }
+    p > a{
+        display: block;
+        color:rgb(232, 148, 171) ;
+      margin-top: 20px;
+        text-align: center;
+    }
+   p > input[type=submit]{
+    display: block;
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    border: none;
+    background-color: rgb(232, 148, 171);
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-top: 20px;
+   }
+   p > input[type=submit]:hover{
+    background-color: rgb(253, 211, 218);
+    cursor: pointer;
+    transition-duration: 0.4s;
+   }
 

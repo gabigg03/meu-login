@@ -8,22 +8,37 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
     <title>Meu login</title>
+    <style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+</style>
 </head>
 <body>
     <div id="imagem">
       <img src="imagem/pessoa.jpg" alt="pessoa">
     </div>
     <section id="bloco">
-        <div id="campo">
+    
             <form action="cadastro.php" method="post">
-                <p>
+                <div id="campo">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <input type="text" name="login" id="ilogin" required placeholder="Username">
                     <label for="ilogin">Login</label>
-                    <input type="text" name="login" id="ilogin" required>
-                </p>
-                <p>
-                    <label for="isenha">Senha</label>
-                    <input type="password" name="senha" id="isenha">
-                </p>
+                </div>
+                <div id="senha">
+                   <span class="material-symbols-outlined">
+                        lock
+                    </span>
+                    <input type="password" name="senha" id="isenha" placeholder="Password" required>
+                     <label for="isenha">Senha</label>
+                </div>
                 <p>
                     <a href="#">Esqueceu a senha?</a>
                 </p>
@@ -31,7 +46,7 @@
                     <input type="submit" value="Entrar">
                 </p>
             </form>
-        </div>
+        
     </section>
     
 </body>
